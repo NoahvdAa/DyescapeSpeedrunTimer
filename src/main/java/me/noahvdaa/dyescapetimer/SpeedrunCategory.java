@@ -1,6 +1,7 @@
 package me.noahvdaa.dyescapetimer;
 
 public enum SpeedrunCategory {
+	ANY("Any%", "[TIP] Please enable sound for the best experience! [Right-Click to start your adventure...]", "Quest completed: Where Adventures Begin V"),
 	TUTORIAL("Tutorial%", "[TIP] Please enable sound for the best experience! [Right-Click to start your adventure...]", "Quest completed: Where Adventures Begin II");
 
 	private final String humanName;
