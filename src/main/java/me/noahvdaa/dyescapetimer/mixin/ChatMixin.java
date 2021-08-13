@@ -14,7 +14,7 @@ import java.util.UUID;
 
 @Mixin(ChatHudListener.class)
 public class ChatMixin {
-	@Inject(method = {"onChatMessage(Lnet/minecraft/network/MessageType;Lnet/minecraft/text/Text;)V"}, at = {@At("HEAD")}, cancellable = true)
+	@Inject(method = {"onChatMessage(Lnet/minecraft/network/MessageType;Lnet/minecraft/text/Text;Ljava/util/UUID;)V"}, at = {@At("HEAD")}, cancellable = true)
 	public void postSay(MessageType type, Text textComponent, UUID uuid, CallbackInfo ci) {
 		// Not on dyescape.
 		if (!ServerCheckUtil.isOnDyescape()) return;
