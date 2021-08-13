@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "dyescape-speedrun-timer",
+  "version": "${version}",
+
+  "name": "Dyescape Speedrun Timer",
+  "description": "This is an example description! Tell everyone what your mod is about!",
+  "authors": [
+    "NoahvdAa"
+  ],
+  "contact": {
+    "homepage": "https://github.com/NoahvdAa/DyescapeSpeedrunTimer",
+    "sources": "https://github.com/NoahvdAa/DyescapeSpeedrunTimer"
+  },
+
+  "license": "MIT",
+  "icon": "assets/dyescape-speedrun-timer/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "me.noahvdaa.dyescapetimer.DyescapeTimer"
+    ]
+  },
+  "mixins": [
+    "dyescape-speedrun-timer-mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.16.x",
+    "java": ">=16"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
