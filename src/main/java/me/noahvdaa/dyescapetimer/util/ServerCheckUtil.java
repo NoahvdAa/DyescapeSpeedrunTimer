@@ -12,6 +12,6 @@ public class ServerCheckUtil {
 
 		String ip = server.address.toLowerCase();
 
-		return ip.endsWith(".dyescape.com") || ip.endsWith("delayscape.com");
+		return ip.endsWith(".dyescape.com") || ip.equals("delayscape.com");
 	}
 }
