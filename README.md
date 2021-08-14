@@ -9,7 +9,7 @@ Most game speedruns use a timer that directly hooks into the game in order to ge
 1. Start the game and join Dyescape.
 1. Press O to open the run category selection screen. At the time of writing this, the following categories are available:
 	- Any%: Complete all *Where Adventures Begin* quests.
-	- Tutorial%: Complete *Wherre Adventures Begin I & II*
+	- Tutorial%: Complete *Where Adventures Begin I & II*
 1. After selecting a category, jump in the portal in the lobby to start the timer. The timer will end automatically once you complete the last quest necessary for your run.
 
 If you want to use a different key for opening the run selection screen, just go to the Minecraft Controls settings and scroll down to *Dyescape Speedrun Timer*.
