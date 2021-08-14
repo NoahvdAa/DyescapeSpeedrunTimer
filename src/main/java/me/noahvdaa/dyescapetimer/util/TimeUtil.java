@@ -1,4 +1,4 @@
-package me.noahvdaa.dyescapetimer;
+package me.noahvdaa.dyescapetimer.util;
 
 public class TimeUtil {
 	public static String format(long millis) {

@@ -1,4 +1,4 @@
-package me.noahvdaa.dyescapetimer;
+package me.noahvdaa.dyescapetimer.util;
 
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.network.ServerInfo;
@@ -9,6 +9,7 @@ public class ServerCheckUtil {
 
 		if (server == null)
 			return false; // Not on a server (singleplayer).
+
 		String ip = server.address.toLowerCase();
 
 		return ip.endsWith(".dyescape.com") || ip.endsWith(".delayscape.com");

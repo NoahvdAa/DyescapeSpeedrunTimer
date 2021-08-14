@@ -16,6 +16,10 @@ repositories {
     // Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
     // See https://docs.gradle.org/current/userguide/declaring_repositories.html
     // for more information about repositories.
+    maven {
+        name = "CottonMC"
+        url = "https://server.bbkr.space/artifactory/libs-release"
+    }
 }
 
 dependencies {
@@ -25,6 +29,8 @@ dependencies {
 
     // Fabric api
     modImplementation "net.fabricmc.fabric-api:fabric-api:0.37.2+1.16"
+
+    modImplementation include("io.github.cottonmc:LibGui:3.4.0+1.16.5")
 }
 
 processResources {

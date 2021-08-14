@@ -3,7 +3,7 @@
   "id": "dyescape-speedrun-timer",
   "version": "${version}",
   "name": "Dyescape Speedrun Timer",
-  "description": "A timer for Dyescape speedruns. ",
+  "description": "A timer for Dyescape speedruns.",
   "authors": [
     "NoahvdAa"
   ],
@@ -15,7 +15,7 @@
   "icon": "assets/dyescape-speedrun-timer/icon.png",
   "environment": "*",
   "entrypoints": {
-    "main": [
+    "client": [
       "me.noahvdaa.dyescapetimer.DyescapeTimer"
     ]
   },
