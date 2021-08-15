@@ -5,10 +5,11 @@ Most game speedruns use a timer that directly hooks into the game in order to ge
 ## Installation and usage
 
 1. Install [Fabric](https://fabricmc.net/) and the [Fabric API](https://www.curseforge.com/minecraft/mc-mods/fabric-api).
-1. Download the latest release from the [Release Page on Github](https://github.com/NoahvdAa/DyescapeSpeedrunTimer/releases).
+1. Download the latest release from the [Releases Page on Github](https://github.com/NoahvdAa/DyescapeSpeedrunTimer/releases).
 1. Start the game and join Dyescape.
 1. Press O to open the run category selection screen. At the time of writing this, the following categories are available:
 	- Any%: Complete all *Where Adventures Begin* quests.
+	- Death%: Die.
 	- Tutorial%: Complete *Where Adventures Begin I & II*
 1. After selecting a category, jump in the portal in the lobby to start the timer. The timer will end automatically once you complete the last quest necessary for your run.
 

@@ -1,8 +1,11 @@
 package me.noahvdaa.dyescapetimer;
 
 public enum SpeedrunCategory {
-	ANY("Any%", "when you complete the quest Where Adventures Begin V", "[TIP] Please enable sound for the best experience! [Right-Click to start your adventure...]", "Quest completed: Where Adventures Begin V"),
-	TUTORIAL("Tutorial%", "when you complete the quest Where Adventures Begin II", "[TIP] Please enable sound for the best experience! [Right-Click to start your adventure...]", "Quest completed: Where Adventures Begin II");
+	ANY("Any%", "when you complete the quest Where Adventures Begin V", SpeedrunCategory.startPhrase, "^Quest completed: Where Adventures Begin V$"),
+	DEATH("Death%", "when you die", SpeedrunCategory.startPhrase, "^You lost [0-9]+ exp points!$"),
+	TUTORIAL("Tutorial%", "when you complete the quest Where Adventures Begin II", SpeedrunCategory.startPhrase, "^Quest completed: Where Adventures Begin II$");
+
+	private static final String startPhrase = "^\\[TIP\\] Please enable sound for the best experience! \\[Right-Click to start your adventure\\.\\.\\.\\]$";
 
 	private final String humanName;
 	private final String humanEndTrigger;

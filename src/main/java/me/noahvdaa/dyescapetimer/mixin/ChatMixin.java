@@ -32,13 +32,13 @@ public class ChatMixin {
 
 		if (!mod.isActive) {
 			// We haven't started yet, check for start trigger in chat.
-			if (message.equals(mod.activeRun.getStartTrigger())) {
+			if (message.matches(mod.activeRun.getStartTrigger())) {
 				mod.isActive = true;
 				mod.startedAt = System.currentTimeMillis();
 			}
 		} else {
 			// We have started, check for end trigger in chat.
-			if (message.equals(mod.activeRun.getEndTrigger())) {
+			if (message.matches(mod.activeRun.getEndTrigger())) {
 				mod.isActive = false;
 				mod.stoppedAt = System.currentTimeMillis();
 
