@@ -31,10 +31,11 @@ public class ChatMixin {
 		String message = textComponent.getString().replaceAll("\n", "").trim().replaceAll(" +", " ");
 
 		if (!mod.isActive) {
-			// We haven't started yet, check for start trigger in chat.
+			// We haven't started yet (or are waiting for a reset), check for start trigger in chat.
 			if (message.matches(mod.activeRun.getStartTrigger())) {
 				mod.isActive = true;
 				mod.startedAt = System.currentTimeMillis();
+				mod.stoppedAt = null;
 			}
 		} else {
 			// We have started, check for end trigger in chat.
